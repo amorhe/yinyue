@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='topLine'></view>
+  <view class='function_content'>
+    <view class='cource_content'>{{content}}</view>
+  </view>
+
+  <view class='cource_cover'>
+    <image class='cource_img' src='{{courceImg}}' lazy-load></image>
+    <image class='cource_icon' src='../../assets/cource_icon.png'></image>
+  </view>
+
+  <view class='function_view'>
+    <image wx:if='{{isRecord == 0}}' class='imgH' src='../../assets/luyin-5@2x.png' bindtap='start'></image>
+    <image wx:if='{{isRecord == 1}}' class='imgH' src='../../assets/zanting-3@2x.png' bindtap='stop'></image>
+    <image wx:if='{{isRecord == 2}}' class='imgH' src='../../assets/play.png'></image>
+    <image class='imgL' src='../../assets/fenxiang-2@2x.png'></image>
+    <button class='btn' open-type='share'>转发</button>
+  </view>
+
+  <!-- <view class='alertView' wx:if='{{showCode}}'>
+    <view class='codeView'>
+      <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1130583636,2033493811&fm=27&gp=0.jpg'></image>
+    </view>
+    <button></button>
+  </view> -->
+</view>

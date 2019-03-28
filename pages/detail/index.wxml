@@ -1,0 +1,27 @@
+<!--pages/detail/index.wxml-->
+<import src='../../wxParse/wxParse.wxml' />
+<view class='container'>
+  <view class='detail_top'>
+    <view class='showT'>
+      <image class='cource_avatar' src='{{mainUrl + info.image}}' lazy-load></image>
+      <view class='cource_title'>{{info.title}}</view>
+    </view>
+  </view>
+
+  <view class='functionUl'>
+    <navigator hover-class='none' url='/pages/functionGo/index?id={{info.id}}&title={{info.title}}&type=1'>
+      <image class='function_icon' src='../../assets/gushiqiang@2x.png'></image>
+      <view class='function_text'>故事典范</view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/record/index?id={{info.id}}&title={{info.title}}'>
+      <image class='function_icon' src='../../assets/luyin-4@2x.png'></image>
+      <view class='function_text'>我要配音</view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/functionGo/index?id={{info.id}}&title={{info.title}}&type=2'>
+      <image class='function_icon' src='../../assets/jiangjie--2@2x.png'></image>
+      <view class='function_text'>名师讲解</view>
+    </navigator>
+  </view>
+
+
+</view>

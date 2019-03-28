@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='topLine'></view>
+  <view class='content'>
+    <view class='content_page' wx:for='{{list}}' bindtap='goDetail' wx:key='unquie' data-id='{{item.id}}'>
+      <image src="{{mainUrl + item.thumbnail}}"></image>
+      <view class='content_title'>{{item.title}}</view>
+    </view>
+  </view>
+</view>

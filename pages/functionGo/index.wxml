@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='topLine'></view>
+  <view class='function_content'>
+    <view class='cource_content'>{{content}}</view>
+  </view>
+
+  <view class='cource_cover'>
+    <image class='cource_img' src='{{courceImg}}' lazy-load></image>
+    <image class='cource_icon' src='../../assets/cource_icon.png'></image>
+  </view>
+
+  <view class='function_view'>
+    <image hidden='{{isPlay}}' class='imgH' src='../../assets/zanting-3@2x.png' bindtap='pause'></image>
+    <image hidden='{{!isPlay}}' class='imgH' src='../../assets/play.png' bindtap='play'></image>
+    <image class='imgL' src='../../assets/fenxiang-2@2x.png'></image>
+    <button class='btn' open-type='share'>转发</button>
+  </view>
+</view>

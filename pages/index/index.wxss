@@ -1,0 +1,29 @@
+/**index.wxss**/
+.content {
+  padding: 30rpx 38rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content_page {
+  width: 198rpx;
+  margin-bottom: 40rpx;
+  margin-right: 40rpx;
+}
+.content_page:nth-child(3n){
+  margin-right: 0
+}
+.content_page>image {
+  width: 100%;
+  height: 260rpx;
+  box-shadow:0 4rpx 14rpx 0 rgba(0,0,0,0.25);
+  border-radius:8rpx;
+}
+.content_title {
+  width: 100%;
+  margin-top: 16rpx;
+  text-align: center;
+  color: #333;
+  font-size: 22rpx;
+  white-space: nowrap
+}

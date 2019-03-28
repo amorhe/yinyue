@@ -1,0 +1,25 @@
+<!--pages/detail/index.wxml-->
+<import src='../../wxParse/wxParse.wxml' />
+<view class='container cource_bg'>
+  <view class='detail_top'>
+    <view class='showT'>
+      <image class='cource_avatar' src='{{img}}' lazy-load></image>
+      <view>
+        <view class='cource_title'>{{title}}</view>
+        <view class='cource_intro'>
+          <text>故事简介：</text>
+          <view>
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='courceList'>
+    <view wx:for='{{list}}' wx:key='unique' bindtap='godetail' data-id='{{item.id}}'>
+      <image class='cource_image' src='{{item.image}}' lazy-load></image>
+      <view class='cource_page_title'>{{item.title}}</view>
+    </view>
+  </view>
+</view>

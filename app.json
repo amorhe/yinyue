@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/functionGo/index",
+    "pages/record/index",
+    "pages/cource_list/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "杭州晓雯音乐",
+    "navigationBarTextStyle": "black"
+  }
+}

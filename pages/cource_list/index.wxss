@@ -1,0 +1,73 @@
+/* pages/detail/index.wxss */
+@import '../../wxParse/wxParse.wxss';
+.detail_top {
+  width: 100vw;
+  height: 398rpx;
+  background: #2FAC87;
+  position: relative
+}
+.cource_bg {
+  background: #f7f7f7;
+}
+.backIcon {
+  width:15rpx;
+  height:28rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 42rpx;
+}
+.showT {
+  padding: 86rpx 54rpx 0 42rpx;
+  display: flex;
+}
+.cource_avatar {
+  width: 226rpx;
+  height: 234rpx;
+  border-radius:8rpx;
+  margin-right: 40rpx;
+}
+.cource_title {
+  color: #fff;
+  font-size: 34rpx;
+}
+.courceList {
+  padding: 20rpx 40rpx;
+}
+.courceList>view {
+  width: 670rpx;
+  height: 150rpx;
+  border-radius: 6rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 18rpx;
+  box-sizing: border-box;
+  margin-bottom: 18rpx;
+}
+.cource_image {
+  width:120rpx;
+  height:120rpx;
+  border-radius:3rpx;
+  margin-right: 20rpx;
+}
+.cource_page_title {
+  font-size: 24rpx;
+  color: #333;
+  align-self: flex-start;
+  margin-top: 15rpx;
+}
+.cource_intro {
+  color: #fff;
+  font-size:24rpx;
+  margin-top: 18rpx;
+}
+.cource_intro>text {
+  font-size: 30rpx;
+}
+.cource_intro>view {
+  width: 384rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
